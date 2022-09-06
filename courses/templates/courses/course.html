@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Courses</h1>
+{% for i in courses %}
+<h2>{{i.name}}</h2>
+<h5>{{i.category}}</h5>
+<p>{{i.description}}</p>
+<p>{{i.publish_date}}</p>
+<img src="{{i.course_pic.url}}" alt="">
+{% endfor %}
+
+{% endblock content %}
